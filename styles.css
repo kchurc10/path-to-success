@@ -1,0 +1,106 @@
+
+/* CSS BY NAME */
+/* Path to Success – Kurt Church */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS REST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+  --font-display: 'Kavoon', cursive;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+  font-family: var(--font-body);
+  padding: 1rem;
+  color: var(--dark-gray);
+  background-color: var(--white);
+  max-width: 450px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: 3em;
+  color: var(--teal);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+nav h2 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1rem;
+  color: var(--purple);
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--lavender);
+}
+
+h4 {
+  font-size: 1.15em;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+article {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* COMPLEX SELECTORS */
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--pink);
+}
+
+section#services article h3 {
+  font-style: italic;
+}
+
+/* HIDE CONTENT ABOVE MOBILE WIDTH */
+@media (min-width: 451px) {
+  body {
+    display: none;
+  }
+}
